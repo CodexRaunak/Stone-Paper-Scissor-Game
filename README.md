@@ -1,1 +1,1 @@
-Stone Paper Scissor using HTML, CSS , JS.
+Responsive Stone Paper Scissor using HTML, CSS , JS.
