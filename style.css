@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #375486c4;
+}
+.center {
+  text-align: center;
+}
+.score {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.player,
+.computer {
+  display: inline-block;
+  width: 10%;
+}
+.player p,
+.computer p {
+  margin-top: 5px;
+}
+
+.btns-box {
+  width: 50vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgba(45, 202, 53, 0.815);
+  cursor: pointer;
+  border: 1px solid rgb(58, 50, 160);
+  outline: none;
+}
+.temp {
+  justify-content: space-between;
+  width: 45vw;
+}
+.playerHand,
+.compHand {
+  height: 10rem;
+}
+.flip {
+  transform: scaleX(-1);
+}
+
+@keyframes movePlayer {
+  0% {
+    transform: translateY(0px);
+  }
+  15% {
+    transform: translateY(-50px);
+  }
+  30% {
+    transform: translateY(0px);
+  }
+  45% {
+    transform: translateY(-50px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes moveComp {
+  0% {
+    transform: scaleX(-1) translateY(0px);
+  }
+  15% {
+    transform: scaleX(-1) translateY(-50px);
+  }
+  30% {
+    transform: scaleX(-1) translateY(0px);
+  }
+  45% {
+    transform: scaleX(-1) translateY(-50px);
+  }
+  60% {
+    transform: scaleX(-1) translateY(0px);
+  }
+  80% {
+    transform: scaleX(-1) translateY(-50px);
+  }
+  100% {
+    transform: scaleX(-1) translateY(0px);
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .btns-box {
+    width: 100vw;
+    justify-content: space-around;
+  }
+}
